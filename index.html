@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Vin'Scène</title>
+</head>
+<body>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				
+			</div>
+		</div>
+
+		<div id="tete1" class="row">
+			<div class="col-md-3">
+				<img src="img/logo.png">
+			</div>
+	
+			<div class="col-md-9">
+				<nav>
+					<ul>
+						<li>Accueil</li>
+						<li>Inscription</li>
+						<li>8ème édition</li>
+						<li id="classement">Classement</li>
+						<li>Qui sommes nous?</li>
+						<li>Partenaires</li>
+						<li>Nous contacter</li>
+					</ul>	
+				</nav>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div id="tete" class="col-md-12">
+
+			
+			</div>
+
+		</div>
+
+		<div class="row">
+			<form onSubmit="search();return false;" name="formu" class="navbar-form">
+				<input type="text" name="rech" class="form-control">
+				<input type="radio" name="choixType" value="nom" class="radio-inline" checked>
+					<label>NOM</label>
+				<input type="radio" name="choixType" value="prenom" class="radio-inline" checked>
+					<label>prénom</label>	
+				<input type="radio" name="choixType" value="classement" class="radio-inline" checked>
+					<label>classement</label>
+				<input type="radio" name="choixType" value="dossard" class="radio-inline" checked>
+					<label>dossard</label>
+				<button type="submit" name="recherchek" value="recherche" class="btn btn-default" >
+				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>Recherche</button>
+			</form>
+
+			<table class="table table-bordered col-md-12">
+
+				<thead>
+				</thead>
+
+				<tbody id="classmt">
+
+				</tbody>
+				
+			</table>
+			
+		</div>
+
+			
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
